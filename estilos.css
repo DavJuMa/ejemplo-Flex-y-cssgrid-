@@ -17,8 +17,12 @@ body {
 	padding: 40px 0;
 	
 	/* display: flex;
-	gap: 20px; */   /* codigo con flexbox*/
+	gap: 20px;    */  /* codigo con flexbox*/
 
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	gap: 20px;
+	
 }
 
 .titulo {
@@ -31,7 +35,11 @@ body {
 	/* width: 70%;
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px; */
+	gap: 20px; */ /* codigo con flexbox*/
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
 
 }
 
@@ -53,10 +61,15 @@ body {
 .card .textos {
 	height: 100%;
 	
-	/* display: flex;
+	display: flex;
 	flex-direction: column;
-	justify-content: space-between; */
+	justify-content: space-between;
 	
+	/* display: grid;
+	grid-template-rows: 1fr auto;  */
+	
+	/*grid funciona mas para el acomodo de estructuras y colunmas no tanto elementos en este caso seria mejor utilizar flex box ya que este nos sirve para acomodae elementos como en este caso textos */
+
 }
 
 .banner {
@@ -66,10 +79,14 @@ body {
 	background-size: cover;
 	background-position: center center;
 	
-	/* width: 30%;
+	/* width: 30%; */
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between; */
+	justify-content: space-between;
+
+	/* display: grid;
+	grid-template-rows: auto auto auto;
+	align-items: center; */
 
 }
 
